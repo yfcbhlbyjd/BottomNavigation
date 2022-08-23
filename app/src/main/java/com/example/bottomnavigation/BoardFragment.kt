@@ -16,7 +16,6 @@ class BoardFragment : Fragment() {
     private lateinit var binding: FragmentBoardBinding
     private var data = arrayListOf<Board>()
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,13 +27,12 @@ class BoardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        loadData(data)
-
         var adapter = BoardAdapter(findNavController(), data)
         binding.viewPager.adapter = adapter
-
         var indicatorCircle: CircleIndicator3 = binding.circleIndicator
         indicatorCircle.setViewPager(binding.viewPager)
+        loadData(data)
+
 
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
