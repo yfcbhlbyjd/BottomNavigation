@@ -8,19 +8,21 @@
 
     <me.relex.circleindicator.CircleIndicator3
         android:id="@+id/circle_indicator"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="32dp"
+        android:layout_marginBottom="32dp"
         android:layout_weight="0.1"
-        app:tabGravity="center"
-        app:tabIndicatorHeight="0dp"
-        android:background="@android:color/darker_gray" />
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center|bottom"
+        app:tabIndicatorHeight="0dp" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
+
+
 
 
 

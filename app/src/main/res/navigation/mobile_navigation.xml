@@ -24,14 +24,14 @@
         tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.bottomnavigation.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
-    <fragment
         android:id="@+id/boardFragment"
         android:name="com.example.bottomnavigation.BoardFragment"
         android:label="fragment_board"
         tools:layout="@layout/fragment_board" />
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.bottomnavigation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 
 </navigation>
